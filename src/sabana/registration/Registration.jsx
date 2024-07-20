@@ -1,34 +1,42 @@
 import './registration.css';
 import login from './lip-logo.png';
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, } from "react";
 import useFormPost from '../useFormPost';
 import Loader from '../../main/assets/Loader';
 
 const style = { display: 'flex', alignItems: 'center', justifyContent: 'center' };
 
 const Registration = () => {
-  const [formInfo, setFormInfo] = useState('');
+  // const [formInfo, setFormInfo] = useState('');
   const formRef = useRef();
   const [submit, loading, state] = useFormPost();
+  const [submitted , setSubmitted]  = useState('submit')
 
+const setSubmit = () => setTimeout(()=>{
+  console.log('hi');
+  setSubmitted('submit')
+}, 5000)
   const FormData = (e) => {
     e.preventDefault();
     const postData = {
-      organizationType: formRef.current.organizationType.value,
+      // organizationType: formRef.current.organizationType.value,
       registrationProof: formRef.current.registrationProof.value,
-      material: formRef.current.material.value,
-      secondropdown: formRef.current.secondropdown.value,
-      contactr: formRef.current.contactr.value,
-      mobiler: formRef.current.mobiler.value,
+      name: formRef.current.name.value,
+      // material: formRef.current.material.value,
+      // secondropdown: formRef.current.secondropdown.value,
+      // contactr: formRef.current.contactr.value,
+      // mobiler: formRef.current.mobiler.value,
       emailr: formRef.current.emailr.value,
+      phone: formRef.current.phone.value,
       stater: formRef.current.stater.value,
       cityr: formRef.current.cityr.value,
     };
     submit(postData, formRef);
-    console.log(postData);
+    // console.log(postData);
+    setSubmit()
   };
 
-  console.log(formInfo);
+  // console.log(formInfo);
 
   return (
     <>
@@ -97,7 +105,7 @@ const Registration = () => {
             </div>
 
             <button type="submit" className="btn" style={style}>
-              {loading ? <Loader size={25} color={'#fff'} /> : <>{state.message && 'Retry' || 'Submit'}</>}
+              {loading ? <Loader size={25} color={'#fff'} /> : <>{(state.message && 'Retry') || 'Submit'}</>}
             </button>
           </form>
         </div>

@@ -33,18 +33,19 @@ let projects =  [
                 // {id: {numberInt: "6"}, head: "Tanisha Cain", content: "Alika Daugherty", _id: {oid: "66473f5a63fd348af9a91a64"}}
             ],
             projectOverview: "  The Income Cottage Sale project, located in the prime area of East Coast Road (ECR), Chennai, offers an attractive investment opportunity with a guaranteed 12% annual return. Priced at 22 lakhs, the project includes a 1200 sqft plot with a 400 sqft built-up area. This development boasts comprehensive facilities such as 24/7 service, a swimming pool, a fitness center, a restaurant, a conference hall, a kids' play park, and a spa & wellness center. These amenities ensure a luxurious and comfortable living experience for residents and a high potential for rental income. The strategic location in ECR provides excellent connectivity, serene surroundings, and proximity to major attractions and commercial hubs, making it an ideal choice for both vacationers and long-term residents. The combination of affordable pricing, lucrative returns, and extensive facilities makes this project a highly appealing option for investors looking to diversify their portfolio and secure a steady income stream. With its well-planned infrastructure and premium amenities, the Income Cottage Sale project stands out as a promising investment in Chennai's real estate market.  ",
-            location: "ECR",
+            location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.373369871729!2d79.5753025!3d10.4712041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a53616f4c9ea6dd%3A0xc50f0832755a9625!2sEast%20Coast%20Rd!5e0!3m2!1sen!2sin!4v1721471055183!5m2!1sen!2sin",
 
-            nearByAttraction: {
-                title: "Features",
+            nearByAttraction: [{
+                title: "Mahabalipuram (Mamallapuram)",
                 points: [
-                    { point: "Teak wood, Coconut",},
-                    { point: "Mango Trees",},
-                    { point: "Gova Trees",},
-                    { point: "Chapotta Trees",},
-                    { point: "Amla Trees",},
+                    { point: "Shore Temple",},
+                    { point: "Pancha Rathas",},
+                    { point: "Crocodile Bank (North)",},
+                    { point: "Kovalam (Covelong) Beach",},
+                    { point: "Muttukadu Backwaters",},
+                    { point: "Bay of Bengal",},
                 ]
-            },
+            }],
 
             projectsAmmenities: [
                 {id: {numberInt: "1"}, img: require('./img/swimming-poo.jpg'), content: "Swimming Pool", },
@@ -57,7 +58,8 @@ let projects =  [
 
             ],
 
-            projectPlan: "Sandra-Collier--projectplan.png",
+            projectPlan: require('./img/ecr.jpg'),
+            sitemap : require('./img/sitemap.jpg'),
 
             faq: [
                 {id: "1", question: "What is the Income Cottage Sale project?",
@@ -90,18 +92,28 @@ let projects =  [
                 // {id: {numberInt: "6"}, head: "Tanisha Cain", content: "Alika Daugherty", _id: {oid: "66473f5a63fd348af9a91a64"}}
             ],
             projectOverview: "The Kodaikanal to Pannaikadu DTCP EMI Plots project offers prime 1500 sqft plots for sale at 36 lakhs. Located on the Vathalagundu to Kodaikanal road, this gated community features 24/7 security, kids' play area, and park, with easy access to Moolaiyar River, Kodaikanal, Palani, and Vathalagundu. Buyers benefit from a one-time investment with a 10-year monthly rental return of 1%, maintenance-free ownership, and four free stay days per month. The property is DTCP approved, ensuring safety and security, with concrete roads and electricity available. Pay 50% upfront to register and the balance with interest-free EMI.",
-            location: "Kodaikanal to Pannaikadu",
+            location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125631.75064004274!2d77.52610365629593!3d10.262210842565889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b075c3cdfe1c0bb%3A0x176e79923f7a8f21!2sPannaikadu%2C%20Tamil%20Nadu%20624210!5e0!3m2!1sen!2sin!4v1721471118270!5m2!1sen!2sin",
 
-            nearByAttraction: {
-                title: "Features",
+            nearByAttraction: [
+                {
+                title: "Kodaikanal",
                 points: [
-                    { point: "Teak wood, Coconut",},
-                    { point: "Mango Trees",},
-                    { point: "Gova Trees",},
-                    { point: "Chapotta Trees",},
-                    { point: "Amla Trees",},
+                    { point: "Silver Cascade Falls (Near Kodaikanal)",},
+                    { point: "Dolphin's Nose (Near Vattakanal)",},
+                    { point: "Pine Forest (On the Way to Kodaikanal)",},
+                    { point: "Poombarai Village View",},
                 ]
             },
+                {
+                title: "Batalagundu",
+                points: [
+                    { point: "Palani Hills Wildlife Sanctuary",},
+                    { point: "Muthu Mari Amman Temple",},
+                    { point: "Kamarajar Dam",},
+                    
+                ]
+            },
+        ],
 
             projectsAmmenities: [
                {id: {numberInt: "1"}, img: require('./img/swimming-poo.jpg'), content: "Swimming Pool", },
@@ -113,7 +125,8 @@ let projects =  [
                 {id: {numberInt: "2"}, img: require('./img/meeting-hall.jpg'), content: "Meeting Hall", }
             ],//imgae
 
-            projectPlan: require('./img/resturant.jpg'),//image
+            projectPlan: require('./img/kodaikanal.jpg'),//image
+            sitemap : require('./img/sitemap.jpg'),
 
             faq: [
                 {id: "1", question: "What is the Kodaikanal to Pannaikadu DTCP EMI Plots project?",
@@ -146,17 +159,18 @@ let projects =  [
                 // {id: {numberInt: "6"}, head: "Tanisha Cain", content: "Alika Daugherty", _id: {oid: "66473f5a63fd348af9a91a64"}}
             ],
             projectOverview: "The Income Property for Sale in Coutrallam offers a highly profitable investment opportunity with a 34 lakh price tag for a cottage villa. This property guarantees a monthly rental income of ₹34,000 or more for the next 12 years, ensuring a steady and attractive return on investment. The villa is nestled in a lush garden featuring 52 varieties of trees and an herbal farm, adding to the property's charm and value. Coutrallam, known for its serene environment and natural beauty, enhances the appeal of this investment. With its combination of reliable rental income and rich natural surroundings, this property stands out as a lucrative investment option.",
-
-            nearByAttraction: {
-                title: "Features",
+            location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356778.47788598423!2d77.10484780957812!3d8.88965879958944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06811adea8d775%3A0x2c535132cebbf5a!2sPanboli%2C%20Tamil%20Nadu%20627807!5e0!3m2!1sen!2sin!4v1721471177328!5m2!1sen!2sin',
+            nearByAttraction: [{
+                title: "Near By Attraction",
                 points: [
-                    { point: "Teak wood, Coconut",},
-                    { point: "Mango Trees",},
-                    { point: "Gova Trees",},
-                    { point: "Chapotta Trees",},
-                    { point: "Amla Trees",},
+                    { point: "Tenkasi",},
+                    { point: "Vettaiyaadu Village",},
+                    { point: "Courtallam Waterfalls",},
+                    { point: "Papanasam (Tirunelveli)",},
+                    { point: "Nellaiappar Temple (Tirunelveli)",},
+                    { point: "Kalakad Mundanthurai Tiger Reserve",},
                 ]
-            },
+            }],
 
             projectsAmmenities: [
                {id: {numberInt: "1"}, img: require('./img/swimming-poo.jpg'), content: "Swimming Pool", },
@@ -168,7 +182,8 @@ let projects =  [
                 {id: {numberInt: "2"}, img: require('./img/meeting-hall.jpg'), content: "Meeting Hall", }
             ],//imgae
 
-            projectPlan: require('./img/resturant.jpg'),//image
+            projectPlan: require('./img/courtalam.jpg'),//image
+            sitemap : require('./img/courtlam-sitemap.jpg'),
 
             faq: [
                 {id: "1", question: "What is included in the Income Property for Sale in Coutrallam?",
@@ -203,7 +218,7 @@ let projects =  [
             projectOverview: "This Buy 1 Get 1 Free plot sale in Ulundurpettai, near Veppur, offers a unique opportunity to acquire two 1200 sqft plots for the price of one at just 4 lakhs. Conveniently located just 1.5 km from the Chennai to Trichy Highway and 2 km from Nallur, with additional access to the Kadalur to Oshur Highway, the plots are well-connected for ease of travel. An EB line is available, enhancing the property's utility. This offer provides exceptional value, combining strategic location with the benefit of acquiring two plots for the price of one.",
             location: "Damian Dalton",
 
-            nearByAttraction: {
+            nearByAttraction: [{
                 title: "Features",
                 points: [
                     { point: "Teak wood, Coconut",},
@@ -212,7 +227,7 @@ let projects =  [
                     { point: "Chapotta Trees",},
                     { point: "Amla Trees",},
                 ]
-            },
+            }],
 
             projectsAmmenities: [
                {id: {numberInt: "1"}, img: require('./img/swimming-poo.jpg'), content: "Swimming Pool", },
@@ -225,7 +240,7 @@ let projects =  [
             ],//imgae
 
             projectPlan: require('./img/resturant.jpg'),//image
-
+            sitemap : require('./img/sitemap.jpg'),
             faq: [
                 {id: "1", question: "What is the offer for the plots in Ulundurpettai?",
                  answer: "The offer is Buy 1 Get 1 Free, where you purchase one 1200 sqft plot for 4 lakhs and receive an additional 1200 sqft plot for free.",

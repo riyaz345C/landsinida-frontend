@@ -5,6 +5,7 @@ import popup from './lip-logo1.png'
 // import { api } from '../others/api/api'
 import Example from '../main/assets/Loader'
 import useMailSend from './useMailSend'
+import { MdOutlineCancel } from "react-icons/md";
 const style ={
     position:'fixed',
     left:'50%',
@@ -82,8 +83,12 @@ const Modal = ({tog}) => {
             <input type="text" placeholder="enter" /><br />
             <input type="text" placeholder="enter" /><br />
             <input type="text" placeholder="enter" /><br /> */}
-            <div className='enquire' style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-end' }}>
-             Enquire<button onClick={()=>tog(false)}>X</button> </div>
+            <div className='enquire' 
+            style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-end', }}>
+                
+             <button onClick={()=>tog(false)} style={{border:'none',borderRadius:'50%',backgroundColor:'#fff'}}>
+             <MdOutlineCancel size={25} style={{cursor:'pointer'}}/>
+                </button> </div>
             <img
                     src={popup}
                     class="popup-logo"
@@ -95,6 +100,7 @@ const Modal = ({tog}) => {
                         height: 'auto'
                     }}
                 />
+                <h2 style={{width:'fit-content',margin:'0 auto '}}>Enquiry Now</h2>
 
             <input class="input-fieldr" type="text"  name='popupName'  placeholder="Enter your Name" required /><br />
             <input  class="input-fieldr" type="text"  name='popupPhone' placeholder="Enter your Phone Number" required /><br />

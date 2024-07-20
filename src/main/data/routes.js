@@ -17,7 +17,7 @@ export const routes = [
         dropdown: true
     },
     {
-        name:'LIP Infra',
+        name:'LIP Scheme',
         path:'/infra'
     },
     {
@@ -31,23 +31,23 @@ export const routes = [
     },
    
     {
-        name:'Logins',
-        // path:'/login'
-        dropdown: true,
-        paths:[
-            {
-                name:"Registration",
-                path:"registration"
-            },
-            {
-                name:"Vendorlogin",
-                path:"vendorlogin"
-            },
-            {
-                name:'Login',
-                path:'login'
-            }
-        ],
+        name:'Register',
+        path:'/registration',
+        // // dropdown: true,
+        // paths:[
+        //     {
+        //         name:"Registration",
+        //         path:"registration"
+        //     },
+        //     {
+        //         name:"Vendorlogin",
+        //         path:"vendorlogin"
+        //     },
+        //     {
+        //         name:'Login',
+        //         path:'login'
+        //     }
+        // ],
     },
 ]
 

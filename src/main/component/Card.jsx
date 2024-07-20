@@ -12,9 +12,9 @@ function Card({title,img,projectOverview,path}) {
     <div className="primary-card">
         {/* <div className="img"></div> */}
         <div style={{padding:0,display:'flex',alignItems:'center',justifyContent:'center'
-        ,width:'100%',minHeight:'200px'}}>
+        ,width:'100%',height:'200px'}}>
           {/* {img?<img src={img?img:img1} alt="" />:<Example/>} */}
-          <img src={img?img:img1} alt="" />
+          <img src={img?img:img1} style={{height:'100%',objectFit:'cover'}} alt="" />
           </div>
         {/* <div className="price pr-color"><span>xxx$</span> onwards*
         
@@ -26,20 +26,17 @@ function Card({title,img,projectOverview,path}) {
             <h2>content not available</h2>
             </div>}
         </div>
-        {/* <div className="spec1 se-color">
-            <div className="icon icon1">logo <br /> span <br />X</div>
-            <div className="icon icon2">logo <br /> span <br />X</div>
-            <div className="icon icon3">logo <br /> span <br />X</div>
-        </div> */}
         <div className="spec2 se-color">
-            <div className="read-more">read-more</div>
+            <div className="read-more">
+              <Link to={`/project/${title}`} style={{color:'inherit',textDecoration:'inherit',padding:'0'}}>read-more</Link>
+            </div>
             <div className="social-media">
             <div className="facebook"><BsFacebook color={''}/></div>
             <div className="twitter"><FaXTwitter/></div>
             <div className="linkedin"><BsLinkedin/></div>
             </div>
         </div>
-        <button><Link to={`project/${path}`} style={{
+        <button><Link to={`/project/${title}`} style={{
           textDecoration:'none',color:'#fff'
         }}>READY TO MOVE IN</Link></button>
     </div>

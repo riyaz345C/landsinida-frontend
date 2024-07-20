@@ -26,12 +26,12 @@ function SliderOwn() {
 
     var settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
         // slidesToShow: ((width<800)? 1 : ((width<888)? 2 : 3) ),  
         slidesToShow: 2,  
         slidesToScroll: 1,
-        autoplay:true,
+        // autoplay:true, 
         autoplaySpeed:2000,
         pauseOnHover:true,
         responsive:[
@@ -49,20 +49,14 @@ function SliderOwn() {
         },
       ]
       };
-      // const dataFetchedx = [{projects:[
-      //   {projectName:"Ina Richard"},
-      //   {projectName:"Ina Richard"},
-      //   {projectName:"Ina Richard"},
-      //   {projectName:"Ina Richard"},
-      // ]}]
-      // const dataFetched = [{projects : [{},{},{},{}]}]
+    
   return (
     <>
     <Slider {...settings}>
       {/* {dataFetched?dataFetched[0].projects.map((e,i)=>{ */}{/*old */}
       {dataFetched?dataFetched[0].map((e,i)=>{ //new
         return(
-            <Card title={e.projectName+i+1} img={api.get+e.projectPlan} 
+            <Card title={e.projectName} img={e.projectPlan} 
             projectOverview={e.projectOverview} path={e.projectName} key={i}/>
             /*1.project name 2.img
               3.projectoverview 3path */

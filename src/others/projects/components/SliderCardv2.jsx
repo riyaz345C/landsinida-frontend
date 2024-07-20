@@ -7,7 +7,7 @@ const SliderCardv2 = ({data,img}) => {
   return (
    <div className="project-highlights-card">
     {/* <img src={`${api.get}${img}`} alt="" /> */}
-    <img src={`${img}`} alt="" />
+    <img src={`${img}`} alt="" style={{minHeight:'300px',maxHeight:'300px'}}/>
     <h3>{data}</h3>
    </div>
   ) 

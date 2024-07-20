@@ -4,18 +4,18 @@ import Headline from './Headline'
 
 function ProductPlan({img}) {
     const[nav,setnav]=useState(false)
-    const handleNav = (set)=>{
-        set(prv => prv=!prv)
+    const handleNav = (set,bool)=>{
+        set(prv => prv=bool)
         console.log(nav);
     }
   return (
     <section className="product-section-4" id='Plans'>
     <Headline span={'Project'} div={'Plan'}/>
         <div className="project-nav">
-            <li onClick={()=>{handleNav(setnav)}}>Site Plan</li>
-            <li onClick={()=>{handleNav(setnav)}}>Floor Plans</li>
+            <li onClick={()=>{handleNav(setnav,false)}}>Site Plan</li>
+            {/* <li onClick={()=>{handleNav(setnav,true)}}>Floor Plans</li> */}
             <br />
-            <div className={`line ${nav?'right':'left'}`}></div>
+            {/* <div className={`line ${nav?'right':'left'}`}></div> */}
         </div>
         <div className="project-content">
             {nav?

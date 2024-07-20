@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import TestimonialCard from './TestimonialCard'
+import TestimonialCard, { testimonialData } from './TestimonialCard'
 import './tslider.css'
 const map = [1,2,3,4,5,6,7,8,9] //demo
+
 function Tslider() {
     const [x,setX]=useState(0);
     const [autoPlayStop,setStop] = useState(false)
@@ -16,7 +17,7 @@ function Tslider() {
     },[autoPlayStop,x])
 
     const next=()=>{
-        if(x===map.length - 2){
+        if(x===testimonialData.length - 2){
             setX(0); 
             return
         }
@@ -33,9 +34,10 @@ function Tslider() {
     <>
     <h1><span>Customer's </span> Testimonial</h1>
     <div className="slide">
-    {map.map((e,i)=>{
+    {testimonialData.map((e,i)=>{
         return(
-            <TestimonialCard style={{transform:`translateX(calc(-${x * 100}% - ${x * 10}px))`}} key={i} name={e} />
+            <TestimonialCard style={{transform:`translateX(calc(-${x * 100}% - ${x * 10}px))`}}
+             key={i} name={e.name} content={e.content} img={e.img} />
         )
     })}
     </div>

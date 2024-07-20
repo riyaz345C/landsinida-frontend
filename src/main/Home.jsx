@@ -5,23 +5,23 @@ import SliderOwn from './component/SliderOwn'
 import Tslider from './testimonial/Tslider'
 import Modal from '../popup/Modal'
 const mapData =[{
-  place:"chromepet",
+  place:"ECR",
   img:"/c",
-  path:require('./assets/hero.avif')
+  path:require('./data/img/ecr.jpg')
 },{
-  place:"chetpet",
+  place:"Kodaikanal",
   img:"/m",
-  path:require('./assets/logo.jpeg')
+  path:require('./data/img/kodaikanal.jpg')
 },
 {
-  place:"beach",
+  place:"Courtalam",
   img:"/b",
-  path:require('./assets/hero.avif')
+  path:require('./data/img/courtalam.jpg')
 }
 ]
 function Home() {
   const [map,setMap] = useState('/c')
-  const[url,setUrl] = useState(require('./assets/hero.avif'))
+  const[url,setUrl] = useState(require('./data/img/ecr.jpg'))
 
   const mapChng = async(e)=>{
     try{
@@ -70,7 +70,7 @@ function Home() {
     <h1><span>Explore Our </span> Project</h1>
 
     <div className="map">
-    <img src={url} alt={map} style={{width:"50%",height:'100%'}}/>
+    <img src={url} alt={map} style={{width:"50%",height:'300px',objectFit:'cover'}}/>
     <div className="map-btn">
       <b>Select Locality</b>
       {mapData.map((e,i)=>{

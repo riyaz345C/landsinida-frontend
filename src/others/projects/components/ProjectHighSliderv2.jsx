@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import './slidercard.css'
 import SliderCardv2 from './SliderCardv2';
 function ProjectHighSliderv2({ammArray}) {
-  console.log(ammArray.length==3||ammArray.length);
+  console.log(ammArray.length ===3||ammArray.length);
     var settings = {
         dots: true,
         infinite: false,

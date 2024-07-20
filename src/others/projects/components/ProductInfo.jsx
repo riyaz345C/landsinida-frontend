@@ -1,7 +1,7 @@
 import React from 'react'
 import { api } from '../../api/api'
 
-function ProductInfo({projectName,subtitle,boxArray}) {
+function  ProductInfo({projectName,subtitle,boxArray}) {
   return (
     <>
     <img src={`${api.get}/lip.jpg`} alt="" />
@@ -15,9 +15,9 @@ function ProductInfo({projectName,subtitle,boxArray}) {
      <p>{e.content||`paragraph`}</p>
  </div>
    )})}
-    <button>Project Details</button>
+    <button><a href="#Overview" style={{textDecoration:'none',color:'#fff'}}>Project Details</a></button>
     <button>Enquiry Now </button>
-    <button>Check It !</button>
+    {/* <button>Check It !</button> */}
 </div>
     </>
   )
