@@ -20,6 +20,7 @@ const setSubmit = () => setTimeout(()=>{
     e.preventDefault();
     const postData = {
       // organizationType: formRef.current.organizationType.value,
+      dataType:'lip-registration data',
       registrationProof: formRef.current.registrationProof.value,
       name: formRef.current.name.value,
       // material: formRef.current.material.value,

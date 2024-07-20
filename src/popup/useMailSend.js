@@ -8,6 +8,7 @@ const useMailSend = (popupFormRef,setloading,formType) => {
             let postData;
            if(formType==='popup'){
              postData = {
+                dataType:'lip-popup data',
                 Name:  popupFormRef?.current?.popupName.value,
                 Email:  popupFormRef?.current?.popupEmail.value,
                 Phone:  popupFormRef?.current?.popupPhone.value,
